@@ -1,4 +1,4 @@
-package SubSet
+package BackTracking
 
 /*
 我们有 n 栋楼，编号从 0 到 n - 1 。每栋楼有若干员工。由于现在是换楼的季节，部分员工想

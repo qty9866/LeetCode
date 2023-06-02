@@ -1,4 +1,4 @@
-package Combination
+package BackTracking
 
 /*
 找出所有相加之和为 n 的 k 个数的组合，且满足下列条件：
