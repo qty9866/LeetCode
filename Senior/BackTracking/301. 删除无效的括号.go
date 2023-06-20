@@ -18,7 +18,7 @@ package BackTracking
 */
 
 // IsValid 定义函数 判断其中左右括号的个数是否有效
-func isValid(str string) bool {
+func IsValid(str string) bool {
 	cnt := 0
 	for _, ch := range str {
 		if ch == '(' {
@@ -35,7 +35,7 @@ func isValid(str string) bool {
 
 func dfs(ans *[]string, str string, start, lr, rr int) {
 	if lr == 0 && rr == 0 {
-		if isValid(str) {
+		if IsValid(str) {
 			*ans = append(*ans, str)
 		}
 		return
