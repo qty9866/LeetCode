@@ -1,9 +1,12 @@
 package DynamicProgramming
 
-import "testing"
+import (
+	"lettcode/ClassCode/DynamicProgramming/completely"
+	"testing"
+)
 
 func TestSquare(t *testing.T) {
-	numSquares(5)
+	DynamicProgramming.numSquares(5)
 }
 
 func TestOneAndZeros(t *testing.T) {

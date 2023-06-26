@@ -1,6 +1,9 @@
 package DynamicProgramming
 
-import "math"
+import (
+	"lettcode/ClassCode/DynamicProgramming/0-1"
+	"math"
+)
 
 /*
 给你一个整数 n ，返回 和为 n 的完全平方数的最少数量 。
@@ -22,7 +25,7 @@ func numSquares(n int) int {
 	for i := 1; i <= n; i++ {
 		minn := math.MaxInt32
 		for j := 1; j*j <= i; j++ {
-			minn = min(minn, f[i-j*j])
+			minn = DynamicProgramming.min(minn, f[i-j*j])
 		}
 		f[i] = minn + 1
 	}
